@@ -2,11 +2,10 @@
 
 This sample React Native + react-native-track-player project is testing [issue #606](https://github.com/react-native-kit/react-native-track-player/issues/606).
 
-bundle.js:9 Console was cleared
-require.js:114 Require cycle: node_modules/react-native-track-player/lib/index.js -> node_modules/react-native-track-player/lib/ProgressComponent.js -> node_modules/react-native-track-player/lib/index.js
-
 These are the current log results:
 ```
+bundle.js:9 Console was cleared
+require.js:114 Require cycle: node_modules/react-native-track-player/lib/index.js -> node_modules/react-native-track-player/lib/ProgressComponent.js -> node_modules/react-native-track-player/lib/index.js
 Require cycles are allowed, but can result in uninitialized values. Consider refactoring to remove the need for a cycle.
 metroRequire @ require.js:114
 (anonymous) @ ProgressComponent.js:2
